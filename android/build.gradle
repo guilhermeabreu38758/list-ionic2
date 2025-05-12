@@ -27,7 +27,15 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-compileOptions {
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        
+    }
+
+    compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+}
